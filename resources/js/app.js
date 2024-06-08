@@ -1,1 +1,20 @@
-import './bootstrap';
+import { createApp } from 'vue';
+import MainHeader from './components/MainHeader.vue';
+import MainPromo from './components/MainPromo.vue';
+import MainServices from './components/MainServices.vue';
+import MainPortfolio from './components/MainPortfolio.vue';
+import MainAbout from './components/MainAbout.vue';
+import MainTestimonial from './components/MainTestimonial.vue';
+import ContactForm from './components/ContactForm.vue';
+import MainFooter from './components/MainFooter.vue';
+
+const app = createApp({});
+app.component('main-header', MainHeader);
+app.component('main-promo', MainPromo);
+app.component('main-services', MainServices);
+app.component('main-portfolio', MainPortfolio);
+app.component('main-about', MainAbout);
+app.component('main-testimonial', MainTestimonial);
+app.component('contact-form', ContactForm);
+app.component('main-footer', MainFooter);
+app.mount('#app');
